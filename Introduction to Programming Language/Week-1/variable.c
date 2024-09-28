@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main (){
+int main()
+{
 
     // int a , b , c;
     // scanf ("%d %d %d", &a , &b , &c);
@@ -8,20 +9,12 @@ int main (){
     // // getchar ();
     // scanf ("\n %c" , &ch);
 
-
- 
-
     // printf("Inter a number a = %d b = %d c = %d ch = %c" , a, b, c , ch);
 
     float f;
 
-    scanf("%f" , &f);
-    printf("Enter a number %.3f" , f);
-
-
-
-
-
+    scanf("%f", &f);
+    printf("Enter a number %.3f", f);
 
     return 0;
 }
@@ -33,7 +26,7 @@ Formate specifier
 short int %hd
 long int %ld
 long long %lld
-int %d 
+int %d
 char %c
 float %f
 double %lf
