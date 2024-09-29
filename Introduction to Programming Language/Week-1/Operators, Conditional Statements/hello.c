@@ -1,14 +1,17 @@
 #include <stdio.h>
-    int main()
+int main()
+{
+    int x = 5;
+    if (x < 10)
     {
-        int x = 5;
-        if (x < 10) {
-            printf("hello ");
-        }
-        if (x == 5) {
-            printf("hi");
-        }
-        else {
-            printf("no");
-        }
+        printf("hello ");
     }
+    if (x == 5)
+    {
+        printf("hi");
+    }
+    else
+    {
+        printf("no");
+    }
+}

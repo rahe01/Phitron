@@ -33,8 +33,8 @@ int main()
         }
     }
 
-
-    else{
+    else
+    {
         printf("Gohore bose thako");
     }
 
