@@ -3,20 +3,28 @@
 
 int main() {
 
-    int a = 60;
+    int a;
+
+    scanf("%d",  &a);
+
+    if(a <5) {
+        printf("a is less than 5");
+    }
+
+    else if( a<10){
+        printf("a is less than 10");
+    }
+
+    else if(a <50){
+        printf("a is less than or equal to 50");
+    }
+    
+    else{
+        printf("a is greater than or equal to 50");
+    }
     
 
-    if(a <= 50) {
-
-        
-
-
-        printf("buy 4 egs and back taka %d" , a -50);
-    }
-    else{
-        printf("buy 2 egls");
-    };
-
+ 
 
 
 
