@@ -1,8 +1,14 @@
 #include <stdio.h>
-
-int main () {
-    int a = 5, b = 3;
-    int sum = a + b;
-    printf("The sum of a = %d and b = %d \nSum : %d" , a, b , sum);
-    return 0;
-}
+    int main()
+    {
+        int x = 5;
+        if (x < 10) {
+            printf("hello ");
+        }
+        if (x == 5) {
+            printf("hi");
+        }
+        else {
+            printf("no");
+        }
+    }

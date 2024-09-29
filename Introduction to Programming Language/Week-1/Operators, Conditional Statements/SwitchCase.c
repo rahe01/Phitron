@@ -38,7 +38,7 @@ int main()
 
         break;
 
-        default:
+    default:
         printf("Invalid day");
     }
 
