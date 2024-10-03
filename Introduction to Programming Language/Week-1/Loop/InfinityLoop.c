@@ -6,10 +6,10 @@ int main (){
 
     
 
-//     for (int i = 0; i < 10; )
-//     {
-//         printf("Hello ");
-//     }
+    for (int i = -5; i >= -10; i-- )
+    {
+        printf("Hello ");
+    }
     
 //    for (int i = 0; i < 10; i-- )
 //     {
