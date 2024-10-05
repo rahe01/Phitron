@@ -35,10 +35,12 @@ int main()
     }
     else if (marks >= 33)
     {
+        
         printf("You have got D Grade");
     }
     else
     {
+        printf("You have failed\n");
         printf("You have got F Grade");
     }
 
