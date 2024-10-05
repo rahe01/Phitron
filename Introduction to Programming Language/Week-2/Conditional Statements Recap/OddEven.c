@@ -12,8 +12,6 @@ int main()
     }
     else{
         printf("The number is odd.\n");
-      
-
     }
 
       if(n <0){
