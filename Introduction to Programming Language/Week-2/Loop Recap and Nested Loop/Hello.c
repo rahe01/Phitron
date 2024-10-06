@@ -1,18 +1,22 @@
 #include <stdio.h>
-#include <math.h>
 
-int main()
+int main() {
+    int N;
+    int found_even = 0; 
 
-{
-for(int i=0; i<=10; i++)
-    {
-        if(i>2)
-        {
-            continue;
+    scanf("%d", &N);
+
+    for (int i = 1; i <= N; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+            found_even = 1; 
         }
-        printf("hi ");
     }
 
+    if (found_even == 0) {
+        
+        printf("-1\n");
+    }
 
     return 0;
 }
