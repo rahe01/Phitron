@@ -1,24 +1,22 @@
 #include <stdio.h>
-
-int main(){
-
-
-     int N;
-     scanf("%d" , &N);
-     int notEven = 0;
-
-     for(int i = 1; i<=N; i++){
-         if(i%2 == 0){
-             printf("%d\n", i);
-             notEven = 1;
-         }
-     } 
-
-     if(notEven ==0){
-         printf("-1\n");
-     }  
-
-
-
+#include <limits.h>
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int a, max = INT_MIN, min = INT_MAX;
+    for (int i = 1; i <= n; i++)
+    {
+        scanf("%d", &a);
+        if (a > max)
+        {
+            max = a;
+        }
+        if (a < min)
+        {
+            min = a;
+        }
+    }
+    printf("%d %d\n",max);
     return 0;
 }

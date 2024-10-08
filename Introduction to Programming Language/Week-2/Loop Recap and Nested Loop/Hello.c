@@ -1,22 +1,16 @@
 #include <stdio.h>
-
+#include <limits.h>
 int main() {
     int N;
-    int found_even = 0; 
-
     scanf("%d", &N);
 
-    for (int i = 1; i <= N; i++) {
-        if (i % 2 == 0) {
-            printf("%d\n", i);
-            found_even = 1; 
-        }
+    
+    for (int i = 1; i <= 12; i++)
+    {
+        printf("%d * %d = %d\n",N , i , i*N );
     }
-
-    if (found_even == 0) {
-        
-        printf("-1\n");
-    }
+    
+    
 
     return 0;
 }
