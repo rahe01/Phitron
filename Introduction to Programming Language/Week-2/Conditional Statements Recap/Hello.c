@@ -21,7 +21,7 @@ int y = 4;
     }
     else
     {
-        printf("hello ");
+        printf("hello");
     }
 
 
