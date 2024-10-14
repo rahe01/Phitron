@@ -12,13 +12,28 @@ int main()
     {
         for (int j = 1; j <= i; j++)
         {
-            printf("%d ", j);
-            /* code */
+            printf("%d", j);
+           
         }
         printf("\n");
 
-        /* code */
+        
     }
+
+     for (int i = n - 1; i >= 1; i--)
+    {
+        for (int j = 1; j <= (n - i); j++)
+        {
+            printf(" "); 
+        }
+
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d", j);  
+        }
+        printf("\n");
+    }
+    
 
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     return 0;
