@@ -17,7 +17,11 @@ int main()
         /* code */
     }
 
-    else
+    else     
+
+
+
+    
     {
         printf("Consonant");
     }
