@@ -20,7 +20,7 @@ int main() {
     }
     // If neither a nor b is divisible by k
     else {
-        printf("No One\n");
+        printf("No O ne\n");
     }
 
     return 0;
