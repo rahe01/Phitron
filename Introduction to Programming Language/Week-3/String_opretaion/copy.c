@@ -2,16 +2,20 @@
 #include <string.h>
 
 int main(){
-    char a[10];
+    char a[10] = "dfd";
     char b[10] = "abcdef";
 
-    int length = strlen();
+    int length = strlen(b);
+    
+    printf("%s %s\n", a, b);
 
-    for (int i = 0; b[i] != '\0'; i++)
+    for (int i = 0; i< length; i++)
     {
         a[i] = b[i];
         /* code */
     }
+
+    a[length] = '\0';
     
 
     printf("%s %s\n", a, b);
