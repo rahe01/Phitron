@@ -1,7 +1,8 @@
-#include <stdio.h>
-#include <string.h>
-
-int main(){
-
-    return 0;
+int main()
+{
+char a[] = "hello";
+char b[] = "world";
+char c[] = "hello world";
+strcat(b,a);
+strcpy(c,b);
 }

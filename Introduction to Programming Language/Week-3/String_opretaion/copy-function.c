@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 int main(){
      char a[10] = "dfd";
     char b[10] = "abcdef";
