@@ -18,7 +18,7 @@ int main() {
             printf("%d " ,j);
             /* code */
         }
-        printf("\n");
+        printf("\n" );
         
         /* code */
     }
