@@ -3,8 +3,8 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main() {
-
+int main()
+{
 
     int n, k;
     scanf("%d %d", &n, &k);
@@ -13,25 +13,10 @@ int main() {
     {
         for (int j = 1; j <= k; j++)
         {
-            printf("%d " ,j);
-           
+            printf("%d ", j);
         }
-        printf("\n" );
-        
-     
+        printf("\n");
     }
-    
-
-
-
-
-
-
-
-
-
-
-
 
     return 0;
 }
