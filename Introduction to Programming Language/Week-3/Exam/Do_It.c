@@ -5,8 +5,6 @@
 
 int main() {
 
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
-
 
     int n, k;
     scanf("%d %d", &n, &k);
@@ -16,11 +14,11 @@ int main() {
         for (int j = 1; j <= k; j++)
         {
             printf("%d " ,j);
-            /* code */
+           
         }
         printf("\n" );
         
-        /* code */
+     
     }
     
 
