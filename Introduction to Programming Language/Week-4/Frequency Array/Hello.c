@@ -2,12 +2,7 @@
 #include <math.h>
 
 int main(){
-    int n;
-    scanf("%d",&n);
-    
-    int a[n+5];
-    for(int i=0;i<n;i++){
-        scanf("%d",&a[i]);
-    }
+   int arr[100] = {0};
+printf("%d",arr[10]);
     return 0;
 }
