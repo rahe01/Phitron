@@ -16,14 +16,6 @@ int main() {
 
     printf("%d", difference);
 
-
-
-
-
-
-
-
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+   /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     return 0;
 }

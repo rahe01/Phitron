@@ -17,14 +17,6 @@ int main() {
 
         a = (int *)realloc(a, sizeof(int) * (i + 1));
         a[i] = num;
-
-
-
-
-
-
-
-
     }
     for (int i = 0; i < n; i++)
     {
