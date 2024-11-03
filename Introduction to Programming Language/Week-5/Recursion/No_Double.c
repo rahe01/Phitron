@@ -4,15 +4,20 @@
 #include <stdlib.h>
 #include <math.h>
 
-void add()
+int add()
 {
     int a, b;
     scanf("%d %d", &a, &b);
 
-    int sum = a + b;
-    printf("%d", sum);
-    return;
+ int sum = a + b;
+  return sum;
    
+}
+
+void mul (int x, int y){
+    int result = x * y;
+    printf("%d", result);
+    return;
 }
 
 int main()
@@ -20,7 +25,7 @@ int main()
 
     
     
-    add();
+    mul(add() , 8);
 
     return 0;
 }
