@@ -24,6 +24,7 @@ void digit()
 
     for (int i = 0; i < nonzerocount; i++)
     {
+
        arr[i] = nonZero[i];
     }
 
