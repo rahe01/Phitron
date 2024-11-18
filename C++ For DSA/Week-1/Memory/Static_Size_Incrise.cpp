@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    int *a = new int[3];
+    int a[3];
     for (int i = 0; i < 3; i++)
     {
    
@@ -12,7 +12,7 @@ int main(){
         /* code */
     }
 
-    int *b = new int[5];
+    int b[5];
     for (int i = 0; i < 3; i++)
     {
     b[i] = a[i];
@@ -21,7 +21,6 @@ int main(){
     }
     b[3] = 9;
     b[4] = 10;
-    delete[] a;
 
     for (int i = 0; i <5; i++) {
         cout <<  b[i] << " ";
