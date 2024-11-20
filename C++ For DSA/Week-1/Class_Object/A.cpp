@@ -28,8 +28,8 @@ class Worker{
 
 
 
- Worker fun(){
-        Worker rahe = Worker("Rahe" , 23,434.4);
+ Worker* fun(){
+        Worker *rahe = new Worker("Rahe" , 23,434.4);
         return rahe;
     }
 
@@ -45,19 +45,9 @@ int main(){
 
 
     
-   Worker obj = fun();
-    cout << "Name: " << obj.name << ", Age: " << obj.age << ", Salary: " << obj.salary << endl;
+   Worker* obj = fun();
+    cout << "Name: " << obj->name << ", Age: " << obj->age << ", Salary: " << obj->salary << endl;
    
-
-
-
-
-
-
-
-
-
-
 
     return 0;
 }
