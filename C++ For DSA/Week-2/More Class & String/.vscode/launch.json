@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Phitron/C++ For DSA/Week-2",
-      "program": "d:/Phitron/C++ For DSA/Week-2/build/Debug/outDebug",
+      "cwd": "d:/Phitron/C++ For DSA/Week-2/More Class & String",
+      "program": "d:/Phitron/C++ For DSA/Week-2/More Class & String/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

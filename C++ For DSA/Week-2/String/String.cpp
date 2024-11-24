@@ -5,7 +5,7 @@ using namespace std;
 int main(){
   
     string s = "Hello world ";
-    s.clear();
+    s.resize(44 , 'd');
    
 
 
