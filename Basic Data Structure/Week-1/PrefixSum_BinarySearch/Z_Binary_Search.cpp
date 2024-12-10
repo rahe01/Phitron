@@ -23,9 +23,18 @@ int main(){
                 break;
             }
         }
+         if(flag == 1){
+        cout << "found" << endl;
+    }
+    else{
+        cout << "not found" << endl;
+    }
+    
         /* code */
     }
     
+   
+
 
 
 
