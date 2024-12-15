@@ -15,11 +15,20 @@ public:
 
 
 
-void insert_at_head(Node* &head, int val){
+void insert_at_tail(Node* &head, Node* &tail, int val){
 
-    Node* newNode = new Node(val);
-    newNode->next = head;
+  Node* newNode = new Node(val);
+
+
+  if(head == NULL){
     head = newNode;
+    tail = newNode;
+    return;
+  }
+
+  tail->next = newNode;
+  tail = newNode;
+
 
 }
 
@@ -42,15 +51,17 @@ int main(){
 
     Node* head = new Node(10);
     Node* a = new Node(20);
-    Node* b = new Node(30);
+    Node* tail = new Node(30);
 
 
     head->next = a;
-    a->next = b;
+    a->next = tail;
 
-    insert_at_head(head , 100);
-    insert_at_head(head , 200);
-    insert_at_head(head , 300);
+    insert_at_tail(head, tail, 80);
+    insert_at_tail(head, tail, 80);
+    insert_at_tail(head, tail, 80);
+
+   
     print_LinkedList(head);
 
 
