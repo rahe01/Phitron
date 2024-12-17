@@ -43,11 +43,22 @@ void print_LinkedList(Node* head){
 
 }
 
-void delete_LinkedList(Node* &head){
-    Node* deleteNode = head;
+void delete_tail_LinkedList(Node* &head , Node* &tail, int idx){
+   Node* temp = head;
 
-    head = head->next;
-    delete deleteNode;
+   for (int i = 1; i <idx ; i++)
+   {
+
+    temp = temp->next;
+  
+   }
+
+
+   Node* deleteNode = temp->next;
+   temp->next = temp->next->next;
+   delete deleteNode;
+   tail = temp;
+   
 }
 
 
@@ -74,7 +85,9 @@ int main(){
             /* code */
         }
 
-        delete_LinkedList(head);
+
+        
+        delete_tail_LinkedList(head , tail, 3);
 
         print_LinkedList(head);
         
