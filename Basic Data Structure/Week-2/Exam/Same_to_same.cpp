@@ -33,25 +33,19 @@ void insert_at_tail(Node* &head, Node* &tail , int val){
 }
 
 
-void maxMin_dif(Node* &head){
-    int minVal = INT_MAX;
-    int maxVal = INT_MIN;
-    Node* temp = head;
-    while(temp != NULL){
-        if(temp->val < minVal){
-            minVal = temp->val;
+bool same(Node* head, Node* head1){
+    while(head!= NULL && head1!= NULL){
+        if(head->val!= head1->val){
+            return false;
         }
-        if(temp->val > maxVal){
-            maxVal = temp->val;
-        }
-
-        temp = temp->next;
+        head = head->next;
+        head1 = head1->next;
     }
-
-    int duff = maxVal - minVal;
-
-    cout << duff << endl;
+    return head == NULL && head1 == NULL;
 }
+
+
+
 
 
 
@@ -60,6 +54,9 @@ int main(){
 
     Node* head = NULL;
     Node* tail = NULL;
+    Node* head1 = NULL;
+    Node* tail1 = NULL;
+
 
     int val;
 
@@ -73,8 +70,25 @@ int main(){
 
     }
 
+    int val1;
+    while(true){
+        cin >> val1;
+        if(val1 == -1){
+            break;
+        }
+        insert_at_tail(head1, tail1, val1);
+    }
 
-    maxMin_dif(head);
+
+    if(same(head ,head1)){
+        cout << "YES" << endl;
+    }
+    else{
+        cout << "NO" << endl;
+    }
+
+
+   
 
 
 
