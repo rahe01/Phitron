@@ -1,0 +1,1 @@
+{"name":"Local: Reverse_DoublyList","url":"d:\\Phitron\\Basic Data Structure\\Week-3\\STL List\\Reverse_DoublyList.cpp","tests":[{"id":1734888197859,"input":"10 20 30 -1","output":"30 20 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Phitron\\Basic Data Structure\\Week-3\\STL List\\Reverse_DoublyList.cpp","group":"local","local":true}
