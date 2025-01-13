@@ -27,6 +27,29 @@ void preOrder(Node* root){
 }
 
 
+void lelvel_order(Node *root){
+    queue<Node*> q;
+    q.push(root);
+
+    while(!q.empty()){
+        // 1. ber kore ana
+
+        Node* f = q.front();
+        q.pop();
+        // 2. oi node niye kj kora
+        cout << f->val << " ";
+        // 3. children k push kora 
+        if(f->left!= NULL)
+            q.push(f->left);
+        if(f->right!= NULL)
+            q.push(f->right);
+      
+
+    }
+}
+
+
+
 int main(){
     Node* root = new Node(10);
     Node* a = new Node(20);
@@ -42,7 +65,7 @@ int main(){
     b->left = d;
     b->right = e;
 
-    preOrder(root);
+    lelvel_order(root);
 
 
     
