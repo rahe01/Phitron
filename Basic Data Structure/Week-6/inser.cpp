@@ -71,31 +71,35 @@ Node* input(){
     return root;
 }
 
-bool search(Node* root, int val){
-
-    if(root == NULL){
-        return false;
-    }
-    if(root->val == val){
-        return true;
+void insert(Node* &root, int val){
+    if(root==NULL){
+        root = new Node(val);
+        return;
     }
     if(val < root->val){
-        return search(root->left, val);
+        if(root->left == NULL){
+            root->left = new Node(val);
+        }
+        else{
+            insert(root->left, val);
+        }
     }
     else{
-        return search(root->right, val);
+        if(root->right == NULL){
+            root->right = new Node(val);
+        }
+        else{
+            insert(root->right, val);
+        }
     }
+
 }
 int main(){
     Node* root = input();
     int val;
     cin >> val;
-    if(search(root, val)){
-        cout << "Found" << endl;
-    }
-    else{
-        cout << "Not Found" << endl;
-    }
+    insert(root, val);
+  
     
     return 0;
 }
