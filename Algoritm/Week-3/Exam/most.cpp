@@ -3,32 +3,31 @@ using namespace std;
 
 class maxWater {
 public:
-    pair<int, int> maxArea(vector<int>& height) {
-        int maxWater = 0;
-        int lp = 0, rp = height.size() - 1;
-        int bestLeft = 0, bestRight = 0;
+    pair<int, int> findIndexes(vector<int>& height) {
+        int n = height.size();
+        if (n < 2) return {-1, -1};
 
-        while (lp < rp) {
-            int w = rp - lp;
-            int h = min(height[lp], height[rp]);
-            int currentWater = w * h;
-
-            // Update max area and indices if we find a larger container
-            if (currentWater > maxWater) { 
-                bestLeft = lp; 
-                bestRight = rp;
-                maxWater = currentWater;
-            }
-
-            // Move the pointer pointing to the smaller height
-            if (height[lp] < height[rp]) {
-                lp++;
-            } else {
-                rp--;
+       
+        int maxLeftIndex = 0;
+        for (int i = 1; i < n; i++) {
+            if (height[i] > height[maxLeftIndex]) {
+                maxLeftIndex = i;
             }
         }
 
-        return {bestLeft, bestRight}; 
+       
+        int maxRightIndex = -1;
+        int secondMaxHeight = INT_MIN;
+
+        for (int i = 0; i < n; i++) {
+            if (i != maxLeftIndex && height[i] > secondMaxHeight) {
+                secondMaxHeight = height[i];
+                maxRightIndex = i;
+            }
+        }
+
+        if (maxLeftIndex > maxRightIndex) swap(maxLeftIndex, maxRightIndex); 
+        return {maxLeftIndex, maxRightIndex};
     }
 };
 
@@ -46,9 +45,8 @@ int main() {
         }
 
         maxWater solver;
-        pair<int, int> result = solver.maxArea(heights);
+        pair<int, int> result = solver.findIndexes(heights);
 
-        // Convert to 1-based indexing if required by the problem statement
         cout << result.first << " " << result.second << endl;
     }
 
